@@ -24,7 +24,7 @@ clearButton.addEventListener('click', () => {
 }) 
 
 const displayMessage = () => {
-	messageToDisplay.textContent = `Hello ${firstNameInput} ${lastNameInput}! You are ${ageInput} years old!`
+	messageToDisplay.textContent = `Hello, ${firstNameInput.value} ${lastNameInput.value}. You are ${ageInput.value} years old! :)`
 }
 
 
