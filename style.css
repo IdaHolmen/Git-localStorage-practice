@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+#root, #__next {
+	isolation: isolate;
+}
+
+button {
+	font: inherit;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	touch-action: manipulation;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.form-page {
+	background: #f6bd60;
+	font-family: "PT Serif", serif;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-info {
+	font-size: larger;
+	margin-bottom: 1rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.7rem;
+}
+
+input {
+	border-radius: 0.625rem;
+	border: none;
+	text-align: center;
+}
+
+.submit-button {
+	width: 6rem;
+	height: 2.5rem;
+	background-color: #84a59d;
+	border-radius: 25px;
+	margin-bottom: 1rem;
+	border: 1px solid white;
+}
+
+.submit-button:hover {
+	background-color: #79928c;
+}
+
+.clear-button {
+	width: 6rem;
+	height: 2.5rem;
+	background-color: #f28482;
+	border-radius: 25px;
+	border: 1px solid white;
+}
+
+.clear-button:hover {
+	background-color: #de7a78;
+}
+
+.display-message {
+	font-size: larger;
+	margin-top: 4rem;
+}

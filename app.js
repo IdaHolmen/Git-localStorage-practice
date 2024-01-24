@@ -3,14 +3,15 @@ const lastNameInput = document.querySelector('.last-name');
 const ageInput = document.querySelector('.age');
 const submitButton = document.querySelector('.submit-button');
 const clearButton = document.querySelector('.clear-button');
-const displayMessage = document.querySelector('.display-message');
+const messageToDisplay = document.querySelector('.display-message');
 const users = [];
 
 
 submitButton.addEventListener('click', (e) => {
 	e.preventDefault();
 	storeData(firstNameInput.value, lastNameInput.value, ageInput.value)
-});
+	displayMessage();
+}); 
 
 const storeData = (firstName, lastName, age) => {
 	localStorage.setItem('firstname', firstName);
@@ -21,4 +22,10 @@ const storeData = (firstName, lastName, age) => {
 clearButton.addEventListener('click', () => {
 	localStorage.clear();
 }) 
+
+const displayMessage = () => {
+	messageToDisplay.textContent = `Hello ${firstNameInput} ${lastNameInput}! You are ${ageInput} years old!`
+}
+
+
 
