@@ -115,10 +115,14 @@ input {
 .display-message { 
 	flex-basis: 40%;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	font-size: larger;
 }
 
-.message {
-	font-weight: 800;
+.avocado-image {
+	height: 100px;
+	display: none;
 }
+

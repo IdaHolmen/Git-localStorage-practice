@@ -23,8 +23,13 @@ clearButton.addEventListener('click', () => {
 	localStorage.clear();
 }) 
 
+const messageText = document.querySelector('.message-text');
+
 const displayMessage = () => {
-	messageToDisplay.textContent = `Hello, ${firstNameInput.value} ${lastNameInput.value}. You are ${ageInput.value} years old! :)`
+    messageText.textContent = `Hello, ${firstNameInput.value} ${lastNameInput.value}. You are ${ageInput.value} years old! :)`;
+	
+    const avocadoImage = document.querySelector('.avocado-image');
+    avocadoImage.style.display = 'flex';
 }
 
 
